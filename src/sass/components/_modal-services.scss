@@ -1,0 +1,34 @@
+/* -------------modal services---------------------- */
+.hidden{
+  display: none;
+}
+
+
+.modal-services {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.4);
+    backdrop-filter: blur(1px);
+    z-index: 999;
+  }
+  
+  .modal-services__popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 500px;
+    width: 100%;
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    padding: 30px 20px;
+    /* z-index: 1000; */
+    /* gap: 5px; */
+  }

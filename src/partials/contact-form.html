@@ -1,0 +1,39 @@
+<div class="contact hidden">
+    <form class="contact__form">
+        <button class="btn btn--close"><i class="fa-solid fa-square-xmark"></i></button>
+        <!-- <div class="contact__header"> -->
+        <h2 class="contact__title">Formularz kontaktowy</h2>
+        <!-- </div> -->
+        <label class="contact__label" for="company">Nazwa firmy
+            <input class="contact__input" type="text" name="company_name" id="company" required>
+            <i class="fa-solid fa-industry"></i>
+            <p class="contact__error"></p>
+        </label>
+        <label class="contact__label" for="fullName">Imię i nazwisko
+            <input class="contact__input" type="text" name="" id="fullName" required>
+            <i class="fa-solid fa-user"></i>
+            <p class="contact__error"></p>
+        </label>
+        <label class="contact__label" for="phone">Telefon
+            <input class="contact__input" type="tel" name="telephone" id="phone" value="+48" required>
+            <!-- <i class="fa-solid fa-phone"></i> -->
+            <p class="contact__error"></p>
+        </label>
+        <label class="contact__label" for="email">Email
+            <input class="contact__input" type="email" name="" id="email" required>
+            <i class="fa-solid fa-envelope"></i>
+            <p class="contact__error"></p>
+        </label>
+        <label class="contact__label" for="info">Wiadomość</label>
+        <textarea class="contact__info" name="information" id="info"></textarea>
+        <button class="btn btn--send" type="submit">Wyślij wiadomość
+            <i class="fa-solid fa-paper-plane"></i>
+        </button>
+        <div class="contact__popup">
+            <p>Formularz został poprawnie wysłany!</p>
+            <button class="btn btn--close">
+                <!-- <i class="fa-solid fa-square-xmark"></i> -->
+            </button>
+        </div>
+    </form>
+</div>
