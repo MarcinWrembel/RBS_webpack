@@ -1,8 +1,5 @@
-import './sass/main.scss'
-
-
-
-
+import "./sass/main.scss";
+import "./js/modal-services";
 
 //wrzucić do template html
 // <%= require('html-loader!./partials/main.html').default %>

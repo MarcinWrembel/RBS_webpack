@@ -3,25 +3,30 @@ const servicesList = document.querySelector(".services__list");
 const modalParent = document.querySelector(".modal-services__popup");
 const modalChildren = [...modalParent.children];
 
-console.log(modalServices);
-console.log(modalParent);
-console.log(modalChildren);
-
 const switchModalView = (e) => {
-
-if (e.target.tagName === "BUTTON") {
-    console.log(e);
-
-
-}
-
+  if (e.target.tagName === "BUTTON") {
+    modalChildren.forEach((child) => {
+      if (child.className.includes(e.target.id)) {
+        modalServices.classList.toggle("hidden");
+        child.classList.toggle("hidden");
+      } else {
+      }
+    });
+  }
 };
 
 const hideModal = () => {
-  modalServices.classList.add("hidden");
+  modalServices.classList.toggle("hidden");
+
+  modalChildren.forEach((child) => {
+    if (!child.className.includes("hidden")) {
+      child.classList.toggle("hidden");
+    }
+  });
 };
 
 modalServices.addEventListener("click", switchModalView);
+
 window.addEventListener("keyup", (e) => {
   if (e.key === "Escape" || e.key === "Esc") {
     hideModal();
