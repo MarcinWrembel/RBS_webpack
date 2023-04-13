@@ -1,34 +1,48 @@
 /* -------------modal services---------------------- */
-.hidden{
-  display: none;
-}
-
 
 .modal-services {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(128, 128, 128, 0.4);
-    backdrop-filter: blur(1px);
-    z-index: 999;
-  }
-  
-  .modal-services__popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(128, 128, 128, 0.4);
+  backdrop-filter: blur(1.5px);
+  z-index: 999;
+  overflow-y: auto;
+
+  &__popup {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 300px;
-    max-width: 500px;
-    min-height: 500px;
+    max-width: 600px;
+    max-height: 700px;
+    height: auto;
     width: 100%;
     margin: 0 10px;
     background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px black;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     padding: 30px 20px;
-    /* z-index: 1000; */
-    /* gap: 5px; */
   }
+
+  &__heading {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  &__list span {
+    display: block;
+    font-weight: 700;
+  }
+
+  &__list span:first-child {
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+}

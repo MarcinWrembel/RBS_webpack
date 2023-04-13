@@ -16,7 +16,9 @@ const switchModalView = (e) => {
 };
 
 const hideModal = () => {
-  modalServices.classList.toggle("hidden");
+  modalServices.classList.contains("hidden")
+    ? ""
+    : modalServices.classList.toggle("hidden");
 
   modalChildren.forEach((child) => {
     if (!child.className.includes("hidden")) {
