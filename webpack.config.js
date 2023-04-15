@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "./dist"),
     filename: "index.js",
-    publicPath: "./",
+    publicPath: "/",
   },
 
   module: {
@@ -41,7 +41,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     static: {
-        directory: path.join(__dirname, 'public'),
+        directory: path.join(__dirname, 'dist'),
       },
     open: true,
     watchFiles: ['src/index.html'],
