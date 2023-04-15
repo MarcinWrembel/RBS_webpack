@@ -35,4 +35,10 @@ window.addEventListener("keyup", (e) => {
   }
 });
 
+window.addEventListener("click", (e) => {
+  if (e.target.className === "modal-services") {
+    hideModal();
+  }
+});
+
 servicesList.addEventListener("click", switchModalView);

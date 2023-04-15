@@ -1,5 +1,6 @@
 import "./sass/main.scss";
 import "./js/modal-services";
+import './js/mobile-menu';
 
 //wrzucić do template html
 // <%= require('html-loader!./partials/main.html').default %>
