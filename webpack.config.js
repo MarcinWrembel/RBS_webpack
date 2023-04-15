@@ -43,7 +43,7 @@ module.exports = {
         directory: path.join(__dirname, 'public'),
       },
     open: true,
-    watchFiles: ['src/template.html'],
+    watchFiles: ['src/index.html'],
     compress: true,
     hot: true,
     port: 9000,
@@ -52,7 +52,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "webpack Boilerplate",
-      template: path.resolve(__dirname, "./src/template.html"), // template file
+      template: path.resolve(__dirname, "./src/index.html"), // template file
       filename: "index.html", // output file
     }),
     // Only update what has changed on hot reload
