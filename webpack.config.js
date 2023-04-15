@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "./dist"),
     filename: "main.js",
-    publicPath: "https://github.com/MarcinWrembel/RBS_webpack",
+    publicPath: "https://github.com/MarcinWrembel/RBS_webpack/",
   },
 
   module: {
