@@ -41,7 +41,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     static: {
-        directory: path.join(__dirname, 'dist'),
+        directory: path.join(__dirname, 'public'),
       },
     open: true,
     watchFiles: ['src/index.html'],
